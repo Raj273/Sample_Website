@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>MY PAGE</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(9, 173, 9)k;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: rgb(9, 173, 9);
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+</style>
+</head>
+
+<body>
+    
+<div class="media border p-3">
+        <img src="logo.jpg" alt="logo" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+        <div class="media-body">
+            <h1>Avatar Ashram</h1> 
+            <p><b>Old Age Home</b></p>
+        </div>
+     </div>
+     <div class="container">
+     <div class="topnav">
+        <a class="active" href="Aboutus.html">Admit</a>
+        <div class="topnav-right">
+          
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+    </div>
+    <form action="">
+        <div class="container">
+          <h1>Person Details</h1>
+          <p><b>Please fill in this form to Admit the person</b></p>
+          <hr>
+      
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+      
+          <label for="psw"><b>Date of Birth</b></label>
+          <input type="date" placeholder="Enter DOB" name="psw" id="psw" required>
+            <br><br>
+          <label for="psw-repeat"><b>Enter Age</b></label>
+          <input type="text" placeholder="Enter Age" name="psw-repeat" id="psw-repeat" required>
+          
+          <label for="Gender"><b>Select Gender</b></label>
+          <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="Other" name="Gender" value="Other">
+        <label for="Other">Other</label><br><br>
+
+        <label for="name"><b>AadharCard Number</b></label>
+          <input type="text" placeholder="Enter AadharCard Number" name="name" id="name" required>
+
+          <label for="w3review"><b>Reason to Admit</b></label><br>
+          <textarea id="w3review" name="w3review" rows="4" cols="50">
+            </textarea>
+
+          <hr>
+          <p>By Submitting our form you agree to our <a href="#">Terms & Privacy</a>.</p>
+      
+          <button type="submit" class="registerbtn">Submit</button>
+        </div>
+        
+        
+      </form>
+      
+    
+</body>
+</html>
